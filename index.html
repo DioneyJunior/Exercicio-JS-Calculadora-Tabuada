@@ -7,15 +7,19 @@
     <title>Document</title>
   </head>
   <body>
-    <button onclick="Tabuada">Mostrar tabuada</button>
-    <button onclick="Limpar">Limpar tabuada</button>
+    <button onclick="tabuada()">Mostrar tabuada</button>
+    <button onclick="Limpar()">Limpar tabuada</button>
     <div id="output"></div>
     <script>
       const output = document.getElementById("output");
 
       function tabuada() {
         let n = prompt("Digite um número");
-        for (i = 0; i <= 100; i++) {}
+        n = parseFloat(n);
+        for (let i = 0; i <= 1000; i++) {
+          msg = i * n;
+        }
+        output.innerHTML = msg;
       }
     </script>
   </body>
